@@ -4,7 +4,7 @@ declare databases cursor for
 	SELECT dtb.name AS [Name]
 	FROM
 	master.sys.databases AS dtb
-	WHERE [Name] Like 'PROTEUS%';
+	WHERE [Name] Like 'DB_NAME%';
 declare @db sysname
 declare @sql varchar (5000)
 
